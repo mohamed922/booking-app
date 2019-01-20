@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://breakawayexperiences.com/content/images/thumbs/0005641_london-hot-air-balloon-ride.jpeg');
+    background-size: cover;
+  }
