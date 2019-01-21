@@ -1,0 +1,14 @@
+mat-toolbar {
+    height:70px ;
+}
+.logo-container {
+    width: 100% ;
+}
+span {
+    color: red ;
+    font-size: bold ;
+    text-transform: uppercase ;
+}
+.center {
+    flex: .5 auto ;
+}
