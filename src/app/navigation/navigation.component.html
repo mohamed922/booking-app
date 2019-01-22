@@ -1,16 +1,37 @@
 
+<nav mat-tab-nav-bar class="nav-tabs" fxLayout="row" fxLayoutAlign="center center">
+  <a mat-tab-link
+     routerLink="/"
+     active="isActive"
+   >
+    HOME
+  </a>
+  <a mat-tab-link
+     routerLink="/accomodation"
+     active="accomodation.isActive"
+   >
+    ACCOMODATION
+  </a>
+  <a mat-tab-link
+     routerLink="/offers"
+     active="offers.isActive"
+   >
+    OFFERS
+  </a>
 
+<a mat-tab-link
+   routerLink="/food-bererage"
+   active="food-bererage.isActive"
+ >
+ Food Bererage
+</a>
 
-<mat-tab-group>
-    <span class="centert"></span>
+<a mat-tab-link
+   routerLink="/life-style"
+   active="life-style.isActive"
+ >
+ Life Style
+</a>
 
-    <mat-tab label="First"> Content 1 </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-    
-    <span class="centert"></span>
-  </mat-tab-group>
+</nav>
   

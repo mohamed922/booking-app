@@ -1,0 +1,126 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$booking-primary: (
+    50 : #fffaed,
+    100 : #fff4d1,
+    200 : #ffecb3,
+    300 : #ffe494,
+    400 : #ffdf7d,
+    500 : #ffd966,
+    600 : #ffd55e,
+    700 : #ffcf53,
+    800 : #ffca49,
+    900 : #ffc038,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff5e1,
+    A700 : #ffedc8,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$booking-secondary: (
+    50 : #edf5ea,
+    100 : #d2e5ca,
+    200 : #b5d4a7,
+    300 : #97c284,
+    400 : #80b569,
+    500 : #6aa84f,
+    600 : #62a048,
+    700 : #57973f,
+    800 : #4d8d36,
+    900 : #3c7d26,
+    A100 : #cdffbe,
+    A200 : #a6ff8b,
+    A400 : #7fff58,
+    A700 : #6cff3f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$booking-warn: (
+    50 : #f0ece0,
+    100 : #d9cfb3,
+    200 : #bfb080,
+    300 : #a5904d,
+    400 : #927826,
+    500 : #7f6000,
+    600 : #775800,
+    700 : #6c4e00,
+    800 : #624400,
+    900 : #4f3300,
+    A100 : #ffc982,
+    A200 : #ffb44f,
+    A400 : #ff9e1c,
+    A700 : #ff9303,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$booking-app-primary: mat-palette($booking-primary ,700 , 100);
+$booking-app-secondary:  mat-palette($booking-secondary, 400 , 500, 900);
+
+
+$booking-app-warn: mat-palette($booking-warn);
+
+
+$booking-app-theme: mat-light-theme($booking-app-primary, $booking-app-secondary, $booking-app-warn);
+
+
+@include angular-material-theme($booking-app-theme);
+// all styles are be here 
+.nav-tabs {
+    background-color: mat-color($booking-app-secondary , 400);
+}
+
+.mat-drawer {
+    background-color: mat-color($booking-app-secondary , 300);
+}
+h3:hover {
+    background-color: mat-color($booking-app-secondary , 100);
+}
