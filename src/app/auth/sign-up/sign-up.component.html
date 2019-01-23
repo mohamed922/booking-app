@@ -1,3 +1,18 @@
-<p>
-  sign-up works!
-</p>
+<div class="sign-up" fxFlex="70%" fxLayout="column" fxLayoutAlign="center center ">
+    <mat-form-field>
+      <input matInput placeholder="E-mail">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="password">
+      </mat-form-field>
+      <mat-form-field>
+          <input matInput placeholder="phone number">
+        </mat-form-field>
+    <mat-form-field>
+      <mat-select placeholder="Gerand">
+        <mat-option value="option">male</mat-option>
+        <mat-option value="option">female</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <a mat-raised-button routerLink="/sign-in" color="accent">Submit</a>
+  </div>

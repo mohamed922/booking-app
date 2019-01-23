@@ -1,7 +1,4 @@
 
-.container {
-    flex: .5 .5 auto ;
-}
 .home-theme {
     background-image: url("src\assets\images\6.jpg");
     background-repeat: no-repeat ;
@@ -28,4 +25,22 @@
         font-size: 50px ;
         font-weight: bold ;
         font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+}
+.rooms-title {
+    text-align: center ;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .text {
+        font-size: 25px ;
+    }
 }

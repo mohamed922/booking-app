@@ -8,6 +8,10 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
     declarations: [],
     imports: [ CommonModule ,
@@ -19,6 +23,10 @@ import {MatTabsModule} from '@angular/material/tabs';
            MatSidenavModule,
            MatListModule,
            MatTabsModule,
+           MatFormFieldModule,
+           MatSelectModule,
+           MatInputModule,
+           MatCheckboxModule,
         ]  ,
     exports: [ MatCardModule ,
          MatBadgeModule ,
@@ -28,6 +36,10 @@ import {MatTabsModule} from '@angular/material/tabs';
           MatSidenavModule,
           MatListModule,
           MatTabsModule,
+          MatFormFieldModule,
+          MatSelectModule,
+          MatInputModule,
+          MatCheckboxModule,
         ],
     providers: [],
 })

@@ -1,3 +1,11 @@
-<p>
-  sign-in works!
-</p>
+<div class="login" fxFlex="70%" fxLayout="column" fxLayoutAlign="center center ">
+    <mat-form-field >
+      <input matInput formControlName="email" placeholder="E-mail">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput formControlName="password" placeholder="Password">
+      </mat-form-field>
+      <mat-checkbox formControlName="hideRequired">Remember Me</mat-checkbox>
+      <br>
+    <a mat-raised-button routerLink="/" color="accent">login</a>
+  </div>
